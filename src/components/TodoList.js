@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
 
+
+// This component calls upon another component (Todo) and maps through to display each todo created.
+// onClick in this functional component changes things in the todolist to be 'active' / 'completed' 
+
 const TodoList = ({ todos, toggleTodo }) => (
   <ul>
     {todos.map(todo =>
